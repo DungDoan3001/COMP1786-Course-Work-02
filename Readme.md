@@ -1,4 +1,4 @@
-# Calculator Application
+# COMP1786 Course work 02
 
 This repository contains three projects related to developing various Android applications.
 
