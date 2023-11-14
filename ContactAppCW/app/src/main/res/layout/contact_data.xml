@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="1dp"
+    app:cardUseCompatPadding="true"
+    app:contentPadding="2dp"
+    app:cardBackgroundColor="@color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_contact_items">
+
+        <androidx.constraintlayout.utils.widget.ImageFilterView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/contact_item_image"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="3dp"
+            android:src="@drawable/person_image_vector"
+        />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:orientation="vertical"
+            android:layout_toStartOf="@id/contact_item_more_btn"
+            android:layout_toLeftOf="@id/contact_item_more_btn"
+            android:layout_toEndOf="@id/contact_item_image"
+            android:layout_toRightOf="@id/contact_item_image"
+        >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_item_name"
+                android:text="Contact name"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_item_phone_number"
+                android:text="Phone number"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_item_address"
+                android:text="Address"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/contact_item_email"
+                android:text="Email"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:textColor="@color/black"/>
+
+        </LinearLayout>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/contact_item_more_btn"
+            android:background="@null"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/more_arrow_vector"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
