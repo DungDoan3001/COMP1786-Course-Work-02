@@ -23,7 +23,7 @@
         android:layout_alignParentBottom="true"
         android:layout_margin="15dp"
         android:contentDescription="Add Item"
-        android:backgroundTint="@color/primaryGreen"
+        android:backgroundTint="@color/purple_700"
         android:src="@drawable/add_contact_vector"
     />
 
